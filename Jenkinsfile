@@ -34,7 +34,8 @@ pipeline {
                       sh "kubectl apply -f deployment/deployment.yml"
                       sh "kubectl get nodes"
                       sh "kubectl get pod -o wide"
-                      sh "kubectl get services"
+                      sh "kubectl get services -o wide"
+                      sh "kubectl describe svc capstone-project-cloud-devops"
                       //sh "kubectl expose deployment capstone-project-cloud-devops --type=LoadBalancer --name=my-service"
                       //sh "kubectl get services my-service"
                   }
