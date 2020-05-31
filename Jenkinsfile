@@ -24,7 +24,7 @@ pipeline {
                   }
               }
          }
-         stage('Deploying') {
+         /*stage('Deploying') {
               steps{
                   echo 'Deploying to AWS...'
                   withAWS(credentials: 'aws', region: 'us-west-2') {
@@ -43,6 +43,6 @@ pipeline {
                     echo 'Cleaning up...'
                     sh "docker system prune"
               }
-        }
+        }*/
      }
 }
