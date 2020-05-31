@@ -23,6 +23,6 @@ spec:
       containers:
         - image: sabbir33/capstone-project-cloud-devops
           imagePullPolicy: Always
-          name: capstone-app
+          name: capstone-project-cloud-devops
           ports:
             - containerPort: 80
